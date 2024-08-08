@@ -24,61 +24,85 @@ class CustomContainer extends StatelessWidget {
           topLeft: Radius.circular(48),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            title,
-            style: const TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w400,
-              color: AppColors.whiteColor,
-            ),
-          ),
-          const SizedBox(height: 16),
-          const Text(
-            'In publishing and graphic design, Lorem is a placeholder text commonly',
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w400,
-              color: AppColors.whiteColor,
-            ),
-          ),
-          const SizedBox(height: 43),
-          SmoothPageIndicator(
-            controller: pageController,
-            count: controller.Item.length, 
-            effect: const WormEffect(
-              dotColor: Color.fromARGB(255, 228, 227, 216),
-              activeDotColor: AppColors.whiteColor, 
-              dotWidth: 10,
-              dotHeight: 10,
-            ),
-          ),
-          const Spacer(),
-          Padding(
-            padding: const EdgeInsets.all(14.0),
-            child: TextButton(
-              onPressed: () {
-                if (isLastPage) {
-                  Navigator.pushReplacementNamed(context, '/login');
-                } else {
-                  pageController.nextPage(
-                    duration: const Duration(milliseconds: 600),
-                    curve: Curves.easeIn,
-                  );
-                }
-              },
-              style: TextButton.styleFrom(
-                backgroundColor: const Color(0xff56A2A6),
-                padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 12),
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w400,
+                color: AppColors.whiteColor,
+                
               ),
-              child: Text(
-                isLastPage ? "SIGN IN" : "NEXT",
-                style: const TextStyle(color: Colors.white, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'In publishing and graphic design, Lorem is a placeholder text commonly',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w400,
+                color: AppColors.whiteColor,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 43),
+            SmoothPageIndicator(
+              controller: pageController,
+              count: controller.Item.length, 
+              effect: const WormEffect(
+                dotColor: Color.fromARGB(255, 235, 230, 185),
+                activeDotColor: AppColors.whiteColor, 
+                dotWidth: 10,
+                dotHeight: 10,
               ),
             ),
-          ),
-        ],
+            const Spacer(),
+            Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/login');
+                    },
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      
+                    ),
+                    child: const Text(
+                      'SKIP',
+                      style: TextStyle(color: AppColors.whiteColor, fontSize: 18,fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      if (isLastPage) {
+                        Navigator.pushReplacementNamed(context, '/login');
+                      } else {
+                        pageController.nextPage(
+                          duration: const Duration(milliseconds: 600),
+                          curve: Curves.easeIn,
+                        );
+                      }
+                    },
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      
+                    ),
+                    child: const Text(
+                      'NEXT',
+                      style: TextStyle(color: AppColors.whiteColor, fontSize: 18,fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

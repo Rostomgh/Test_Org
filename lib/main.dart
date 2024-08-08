@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(useMaterial3: true),
       
-      home:const LogoS(),
+      home:const LogoScreen(),
       onGenerateRoute: (settings) => AppRouter().onGenerateRoute(settings),
     );
   }
