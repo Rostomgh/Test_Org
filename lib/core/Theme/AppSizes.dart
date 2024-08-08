@@ -4,4 +4,5 @@ class AppSizes {
   static const double widthLogo = 48;
   static const double bettweenL = 8;
   static const double heightC = 288;
+  static const double Ellips = 30;
 }

@@ -110,7 +110,7 @@ class CustomContainer extends StatelessWidget {
                 children: [
                   TextButton(
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/login');
+                      Navigator.pushReplacementNamed(context, '/auth');
                     },
                     style: TextButton.styleFrom(
                       padding: const EdgeInsets.symmetric(
@@ -138,7 +138,7 @@ class CustomContainer extends StatelessWidget {
                   TextButton(
                     onPressed: () {
                       if (isLastPage) {
-                        Navigator.pushReplacementNamed(context, '/login');
+                        Navigator.pushReplacementNamed(context, '/auth');
                       } else {
                         pageController.nextPage(
                           duration: const Duration(milliseconds: 600),
