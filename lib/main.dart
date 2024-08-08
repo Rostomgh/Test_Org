@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_org/FisrtScreen.dart';
+import 'package:test_org/LogoS.dart';
 import 'package:test_org/core/Router/OngenerateRoute.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(useMaterial3: true),
       
-      home: FirstScreen(),
+      home:const LogoS(),
       onGenerateRoute: (settings) => AppRouter().onGenerateRoute(settings),
     );
   }
