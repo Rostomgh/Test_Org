@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_org/features/Home/Widget/CustomContainerStart.dart';
+import 'package:test_org/features/Home/Widget/CustomMenu.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,6 +12,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: CustomContainerStart(),
+    
+    );
   }
 }

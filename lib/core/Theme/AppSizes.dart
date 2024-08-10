@@ -7,4 +7,5 @@ class AppSizes {
   static const double Ellips = 30;
   static const double safeS = 75;
   static const double Smedia = 20 ;
+  static const double smallH = 2;
 }

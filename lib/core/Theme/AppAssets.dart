@@ -8,5 +8,6 @@ class Assets {
   static const String Button="assets/but.png";
   static const String facebbok="assets/SM/facebook.png";
   static const String google="assets/SM/gmail.png";
+  static const String notif="assets/notife.png";
 
 }

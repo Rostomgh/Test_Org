@@ -15,19 +15,20 @@ class BuildAuthScreen extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        
         const Padding(
           padding: EdgeInsets.all(25.0),
           child: Text(
             'Sign in',
             style: TextStyle(
-              fontFamily: 'MyFont',
+                fontFamily: 'MyFont',
                 fontSize: 24,
                 fontWeight: FontWeight.w400,
                 color: AppColors.AuthC),
           ),
         ),
-        const SizedBox(height: 20,), 
+        const SizedBox(
+          height: 20,
+        ),
         CustomInput(
           icon: Icons.email_outlined,
           hint: 'abc@email.com',
@@ -40,7 +41,9 @@ class BuildAuthScreen extends StatelessWidget {
             return null;
           },
         ),
-        const SizedBox(height: 20,), 
+        const SizedBox(
+          height: 20,
+        ),
         CustomInput(
           icon: Icons.email_outlined,
           hint: 'Your password',
@@ -53,28 +56,52 @@ class BuildAuthScreen extends StatelessWidget {
             return null;
           },
         ),
-        const SizedBox(height: 70,),
+        const SizedBox(
+          height: 70,
+        ),
         Padding(
           padding: const EdgeInsets.only(left: 52.0),
           child: CustomButton(
-            onpress: (){},
+            onpress: () {
+              Navigator.pushReplacementNamed(context, '/home');
+            },
             teB: 'SIGN IN',
           ),
         ),
-        const SizedBox(height: 24,),
-        Center(child: Text('OR',style: TextStyle(color: AppColors.Grey,fontSize: 20,fontWeight: FontWeight.w500,fontFamily: 'MyFont'),)),
-        const SizedBox(height: AppSizes.bettweenL,),
+        const SizedBox(
+          height: 24,
+        ),
+        Center(
+            child: Text(
+          'OR',
+          style: TextStyle(
+              color: AppColors.Grey,
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+              fontFamily: 'MyFont'),
+        )),
+        const SizedBox(
+          height: AppSizes.bettweenL,
+        ),
         Padding(
           padding: const EdgeInsets.only(left: 50.0),
-          child: CustomSocial(LoginWith: 'Login with Google',img: Assets.google,onpress:(){} ,),
-        
+          child: CustomSocial(
+            LoginWith: 'Login with Google',
+            img: Assets.google,
+            onpress: () {},
+          ),
         ),
-        SizedBox(height: AppSizes.Smedia,),
-         Padding(
-           padding: const EdgeInsets.only(left: 50.0),
-           child: CustomSocial(LoginWith: 'Login with Facebbok',img: Assets.facebbok,onpress:(){} ,),
-         ),
-
+        SizedBox(
+          height: AppSizes.Smedia,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 50.0),
+          child: CustomSocial(
+            LoginWith: 'Login with Facebbok',
+            img: Assets.facebbok,
+            onpress: () {},
+          ),
+        ),
       ],
     );
   }
