@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:test_org/features/Auth/Widget/CustomButton.dart';
-import 'package:test_org/features/Auth/Widget/CustomInput.dart';
+import 'package:test_org/core/Theme/AppAssets.dart';
+import 'package:test_org/core/Theme/AppColors.dart';
+import 'package:test_org/core/Theme/AppSizes.dart';
 
 class AuthScreen extends StatefulWidget {
   
-   AuthScreen({super.key});
+   const AuthScreen({super.key});
 
   @override
   State<AuthScreen> createState() => _AuthScreenState();
@@ -16,22 +17,23 @@ class _AuthScreenState extends State<AuthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      body: Center(
+      body:SingleChildScrollView(
         child: Column(
+        
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 50,),
-            CustomInput
-            (icon: Icons.email,
-              hint: 'email',obc: true,keyboardType: TextInputType.emailAddress,mycontroller:email,valid: (value) {
-                      if (value == '') {
-                        return 'Enter Email';
-                      }
-                      return null;
-                    },),
-            CustomButton(onpress: (){},teB: 'Next',),
+            Image .asset(Assets.Logo,height: 58,width: 55,),
+            const SizedBox(height: AppSizes.bettweenL,),
+            const Text('EventHub',style: TextStyle(
+              fontSize: 35,
+              fontWeight: FontWeight.w400,
+              color: AppColors.TitleColor,
+              fontFamily: 'MyFont',
+            ),)
           ],
-        ),
-      ),
+          
+        )
+      )
     );
   }
 }

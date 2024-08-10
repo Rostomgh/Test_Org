@@ -9,16 +9,17 @@ class CustomSocial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 56,
       width: 273,
       child: MaterialButton(
         onPressed: onpress,
         child: Row(children: [
           Image.asset(img),
+          const SizedBox(width: 20,),
           Text(
             LoginWith,
-            style: TextStyle(
+            style: const TextStyle(
                 color: AppColors.blackColor,
                 fontWeight: FontWeight.w400,
                 fontSize: 16),

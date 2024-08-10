@@ -7,8 +7,7 @@ class CustomInput extends StatelessWidget {
   final String hint;
   final bool obc;
   final TextInputType? keyboardType;
-  final IconData? icon; // Add this field to accept an icon
-
+  final IconData? icon; 
   const CustomInput({
     super.key,
     required this.valid,
@@ -22,7 +21,7 @@ class CustomInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(7.0),
+      padding: const EdgeInsets.all(15.0),
       child: Container(
         width: 317,
         height: 56,

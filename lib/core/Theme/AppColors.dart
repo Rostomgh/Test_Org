@@ -7,6 +7,7 @@ class AppColors {
   static const Color cyanColor = Color(0xFF00F8FF);
   static const Color hintColor=Color(0xFF747688);
   static const Color blackColor=Color(0xFF000000);
+  static const Color TitleColor=Color(0xFF37364A);
 
 
 }
