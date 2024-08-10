@@ -5,22 +5,48 @@ class CustomSocial extends StatelessWidget {
   final Function() onpress;
   final String img;
   final String LoginWith;
-  const CustomSocial({super.key, required this.onpress, required this.img, required this.LoginWith});
+  const CustomSocial(
+      {super.key,
+      required this.onpress,
+      required this.img,
+      required this.LoginWith});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 56,
       width: 273,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            spreadRadius: 2,
+            blurRadius: 6,
+            offset: Offset(0, 0),
+          ),
+        ],
+        borderRadius: BorderRadius.circular(12),
+      ),
       child: MaterialButton(
         onPressed: onpress,
         child: Row(children: [
-          Image.asset(img),
-          const SizedBox(width: 20,),
+            const SizedBox(
+            width: 33,
+          ),
+          Image.asset(
+            img,
+            height: 26,
+            width: 26,
+          ),
+          const SizedBox(
+            width: 20,
+          ),
           Text(
             LoginWith,
             style: const TextStyle(
-                color: AppColors.blackColor,
+                fontFamily: 'MyFont',
+                color: AppColors.AuthC,
                 fontWeight: FontWeight.w400,
                 fontSize: 16),
           )

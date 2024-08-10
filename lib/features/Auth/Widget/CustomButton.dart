@@ -14,14 +14,16 @@ class CustomButton extends StatelessWidget {
       width: 271,
       child: MaterialButton(
          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         color: AppColors.primaryColor,
       onPressed: onpress,
       child: Padding(
         padding: const EdgeInsets.only(left: 80),
         child: Row(
           children: [
-            Text(teB,style: const TextStyle(color: AppColors.whiteColor,fontSize: 14,fontWeight: FontWeight.w400),),
+            Text(teB,style: const TextStyle(
+              fontFamily: 'MyFont',
+              color: AppColors.whiteColor,fontSize: 18,fontWeight: FontWeight.w400),),
             const SizedBox(width: 62,),
             const Customicon(),
         

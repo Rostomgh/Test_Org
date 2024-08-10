@@ -8,6 +8,8 @@ class AppColors {
   static const Color hintColor=Color(0xFF747688);
   static const Color blackColor=Color(0xFF000000);
   static const Color TitleColor=Color(0xFF37364A);
+  static const Color AuthC=Color(0xFF120D26);
+  static const Color Grey=Color(0xFF9D9898);
 
 
 }

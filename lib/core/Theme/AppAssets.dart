@@ -6,5 +6,7 @@ class Assets {
   static const String Onb2="assets/Onboarding/onb2.png";
   static const String Onb3="assets/Onboarding/onb3.png";
   static const String Button="assets/but.png";
+  static const String facebbok="assets/SM/facebook.png";
+  static const String google="assets/SM/gmail.png";
 
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
+import 'package:test_org/features/Auth/Widget/BuildAuthS.dart';
+import 'package:test_org/features/Auth/Widget/CustomInput.dart';
 
 class AuthScreen extends StatefulWidget {
   
@@ -16,12 +18,11 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body:SingleChildScrollView(
         child: Column(
-        
-          mainAxisAlignment: MainAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: AppSizes.safeS,),
             Image .asset(Assets.Logo,height: 58,width: 55,),
             const SizedBox(height: AppSizes.bettweenL,),
             const Text('EventHub',style: TextStyle(
@@ -29,10 +30,11 @@ class _AuthScreenState extends State<AuthScreen> {
               fontWeight: FontWeight.w400,
               color: AppColors.TitleColor,
               fontFamily: 'MyFont',
-            ),)
-          ],
+            ),),
+            const SizedBox(height: AppSizes.Ellips,),
+          const BuildAuthScreen()
           
-        )
+        ])
       )
     );
   }

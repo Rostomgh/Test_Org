@@ -7,21 +7,21 @@ class CustomInput extends StatelessWidget {
   final String hint;
   final bool obc;
   final TextInputType? keyboardType;
-  final IconData? icon; 
+  final IconData? icon;
   const CustomInput({
     super.key,
     required this.valid,
-    required this.mycontroller,
+    this.mycontroller,
     required this.hint,
     required this.obc,
     this.keyboardType,
-    this.icon, 
+    this.icon,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(15.0),
+      padding: const EdgeInsets.only(left: 30, right: 30),
       child: Container(
         width: 317,
         height: 56,
@@ -36,7 +36,7 @@ class CustomInput extends StatelessWidget {
           textInputAction: TextInputAction.next,
           decoration: InputDecoration(
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.57),
+              borderRadius: BorderRadius.circular(10),
             ),
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
