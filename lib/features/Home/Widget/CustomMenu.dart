@@ -13,7 +13,7 @@ class CustomMenu extends StatelessWidget {
         //mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          IconButton(onPressed: (){}, icon: const Icon(Icons.menu_outlined,color: Colors.white,)),
+          IconButton(onPressed: (){}, icon: Image.asset(Assets.menu,height: 19,width: 24,)),
           const SizedBox(width: 80,),
           const Column(
             //mainAxisAlignment: MainAxisAlignment.center,
@@ -26,7 +26,7 @@ class CustomMenu extends StatelessWidget {
             ],
           ),
           const SizedBox(width: 80,),
-          IconButton(onPressed: (){}, icon:Container(height: 35,width:35,child: Image.asset(Assets.notif,height: 16,width: 15,),) )
+          IconButton(onPressed: (){}, icon:Image.asset(Assets.notif,height: 26,width: 25,) ),
           
           
       
