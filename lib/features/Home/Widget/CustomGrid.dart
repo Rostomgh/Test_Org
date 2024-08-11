@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
+import 'package:test_org/core/Ui/ThreePic.dart';
 
 class CustomGridEvent extends StatelessWidget {
   final String imgGrid;
@@ -13,21 +14,24 @@ class CustomGridEvent extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveGridRow(children: [
       ResponsiveGridCol(
-        lg: 12,
+        sm: 6,
         child: Container(
             height: AppSizes.heighGrid,
             width: AppSizes.widthgrid,
             alignment: const Alignment(0, 0),
-            color: Colors.white,
+            color: Colors.red,
             child: Column(
               children: [
-                Image.asset(
-                  imgGrid,
-                  height: 131,
-                  width: 218,
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Image.asset(
+                    imgGrid,
+                    height: 131,
+                    width: 218,
+                  ),
                 ),
                 const SizedBox(
-                  height: 14,
+                  height: 10,
                 ),
                 Text(
                   nameEvent,
@@ -36,7 +40,12 @@ class CustomGridEvent extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontFamily: 'MyFont',
                       color: AppColors.blackColor),
-                )
+                ),
+                const SizedBox(height: AppSizes.ten,),
+                const Padding(
+                  padding: EdgeInsets.only(left:15.0),
+                  child: ThreePic(),
+                ),
               ],
             )),
       )
