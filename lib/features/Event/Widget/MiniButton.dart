@@ -4,7 +4,9 @@ import 'package:test_org/core/Theme/AppColors.dart';
 class MiniButton extends StatelessWidget {
   final Function()? onpressed;
   final String tit;
-  const MiniButton({super.key, this.onpressed, required this.tit});
+  final Color colorB ;
+  final Color colorT ;
+  const MiniButton({super.key, this.onpressed, required this.tit, required this.colorB, required this.colorT});
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +17,11 @@ class MiniButton extends StatelessWidget {
         onPressed: onpressed,
         shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                color: AppColors.primaryColor,
+                color: colorB,
         child: Text(
           tit,
-          style: const TextStyle(
-              color: Colors.white,
+          style:  TextStyle(
+              color: colorT,
               fontSize: 12,
               fontWeight: FontWeight.w400,
               fontFamily: 'MyFont'),
