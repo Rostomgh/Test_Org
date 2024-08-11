@@ -10,5 +10,9 @@ class Assets {
   static const String google="assets/SM/gmail.png";
   static const String notif="assets/notife.png";
   static const String menu='assets/menu.png';
+  static const String grid1='assets/grid1.png';
+  static const String pic1='assets/pic1.png';
+  static const String pic2='assets/pic2.png';
+  static const String pic3='assets/pic3.png';
 
 }
