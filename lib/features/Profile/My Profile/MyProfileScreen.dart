@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
+import 'package:test_org/features/Profile/My%20Profile/Widget/AboutMe.dart';
+import 'package:test_org/features/Profile/My%20Profile/Widget/BuildCProfile.dart';
+import 'package:test_org/features/Profile/My%20Profile/Widget/CustomButtonP.dart';
 import 'package:test_org/features/Profile/My%20Profile/Widget/CustomInformation.dart';
 
 class MyProfileScreen extends StatefulWidget {
@@ -46,8 +49,32 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                   fontWeight: FontWeight.w400,
                   color: AppColors.AuthC),
             ),
-            const SizedBox(height: AppSizes.ten,),
-            const CustomInformation()
+            const SizedBox(
+              height: AppSizes.ten,
+            ),
+            const CustomInformation(),
+            const SizedBox(
+              height: 20,
+            ),
+            const CustomButtonP(
+              borderColor: AppColors.primaryColor,
+              text: 'Edit Profile',
+              ColorButton: AppColors.whiteColor,
+              ColorText: AppColors.primaryColor,
+              iconI: Assets.edit,
+            ),
+                const SizedBox(
+              height: 20,
+            ),
+          const AboutMe(),
+            const SizedBox(
+              height: 20,
+            ),
+          
+            
+            const BuildCProfil()
+
+
           ],
         ));
   }

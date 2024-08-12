@@ -11,4 +11,5 @@ class AppSizes {
   static const double heighGrid = 255;
   static const double widthgrid = 237;
   static const double ten = 10;
+  static const double wrap = 1;
 }
