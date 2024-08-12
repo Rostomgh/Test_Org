@@ -3,6 +3,7 @@ import 'package:test_org/LogoS.dart';
 import 'package:test_org/core/Router/ErrorRouter.dart';
 import 'package:test_org/features/Auth/AuthScreen.dart';
 import 'package:test_org/features/Auth/SignUpScreen.dart';
+import 'package:test_org/features/Event/EventScreen.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
 import 'package:test_org/features/Onboarding/Onboarding.dart'; // Example: Import another screen
 
@@ -19,6 +20,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) =>const SignUpScreen());
         case '/home':
         return MaterialPageRoute(builder: (_) =>const HomeScreen());
+        case '/event':
+        return MaterialPageRoute(builder: (_) =>const EventScreen());
+
 
       default:
         return MaterialPageRoute(builder: (_) =>const ErrorRoute());
