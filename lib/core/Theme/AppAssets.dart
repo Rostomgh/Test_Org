@@ -17,5 +17,6 @@ class Assets {
   static const String location='assets/local.png';
   static const String card='assets/card.png';
   static const String org='assets/org.png';
+  static const String user='assets/user.png';
 
 }
