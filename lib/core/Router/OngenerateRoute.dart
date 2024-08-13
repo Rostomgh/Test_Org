@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_org/core/Ui/Layout.dart';
 import 'package:test_org/core/Ui/LogoS.dart';
 import 'package:test_org/core/Router/ErrorRouter.dart';
 import 'package:test_org/features/Auth/AuthScreen.dart';
@@ -22,6 +23,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) =>const HomeScreen());
         case '/event':
         return MaterialPageRoute(builder: (_) =>const EventScreen());
+        case '/layout':
+        return MaterialPageRoute(builder: (_) =>const LayoutScreen());
 
 
       default:

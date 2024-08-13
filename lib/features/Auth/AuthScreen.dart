@@ -53,8 +53,9 @@ class _AuthScreenState extends State<AuthScreen> {
           CustomTextRich(
             tes1: 'Don’t have an account?',
             tes2: 'Sign up',
+            
             onTapP: () {
-              Navigator.pushNamed(context, '/signup');
+              Navigator.pushNamed(context, '/layout');
             },
           )
         ])));

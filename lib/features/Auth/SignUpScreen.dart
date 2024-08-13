@@ -29,7 +29,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             tes1: 'Already have an account? ',
             tes2: 'Signin',
             onTapP: () {
-              Navigator.pushNamed(context, '/signup');
+              Navigator.pushNamed(context, '/layout');
             },
           )
           ],

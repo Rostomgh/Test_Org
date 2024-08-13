@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
+import 'package:test_org/features/Notification/Widget/BuildAllScreen.dart';
 import 'package:test_org/features/Notification/Widget/CustomCardInvite.dart';
 
 class NotificationScreen extends StatefulWidget {
@@ -28,7 +29,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
       ),
       body:const Padding(
         padding: EdgeInsets.only(left:10.0,top: 20),
-        child: 
-    );
+        child: BuildAllScreen()
+    ));
   }
 }

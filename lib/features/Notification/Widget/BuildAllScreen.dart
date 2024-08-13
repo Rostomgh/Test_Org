@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
 import 'package:test_org/features/Notification/Widget/CustomCardInvite.dart';
+import 'package:test_org/features/Notification/Widget/CustomWhithoutBu.dart';
 
 class BuildAllScreen extends StatelessWidget {
   const BuildAllScreen({super.key});
@@ -16,11 +17,17 @@ class BuildAllScreen extends StatelessWidget {
           invite: 'Invite Jo Malone',
           name: 'David Silbia'),
           SizedBox(height: AppSizes.notif,),
-            CustomCardInvite(
-          imginvite: Assets.invite,
-          time: 'Just now',
-          invite: 'Invite Jo Malone',
-          name: 'David Silbia'),
+          CustomWithoutBu(
+              desc1: 'following you',
+              imginvite1: Assets.invite1,
+              invite1:'Started',
+              name1: 'Adnan Safi',
+              time1: '5min ago'),
+              
+
+
+          
+          
 
     ]);
   }

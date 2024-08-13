@@ -10,18 +10,21 @@ class CustomGridEvent extends StatelessWidget {
   final String nameEvent;
   final String local;
   const CustomGridEvent(
-      {super.key, required this.imgGrid, required this.nameEvent, required this.local});
+      {super.key,
+      required this.imgGrid,
+      required this.nameEvent,
+      required this.local});
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveGridRow(children: [
       ResponsiveGridCol(
-        sm: 6,
+        xs:7,
         child: Container(
             height: AppSizes.heighGrid,
             width: AppSizes.widthgrid,
             alignment: const Alignment(0, 0),
-            color: Colors.white,
+            color: AppColors.whiteColor,
             child: Column(
               children: [
                 Padding(
@@ -43,23 +46,39 @@ class CustomGridEvent extends StatelessWidget {
                       fontFamily: 'MyFont',
                       color: AppColors.blackColor),
                 ),
-                const SizedBox(height: AppSizes.ten,),
+                const SizedBox(
+                  height: AppSizes.ten,
+                ),
                 const Padding(
-                  padding: EdgeInsets.only(left:15.0),
+                  padding: EdgeInsets.only(left: 15.0),
                   child: ThreePic(),
                 ),
-                SizedBox(height: 10,),
-                 Padding(
-                   padding: const EdgeInsets.only(left: 15.0),
-                   child: Row(
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15.0),
+                  child: Row(
                     children: [
-                      Image.asset(Assets.location,height: 15,width: 12,),
-                      const SizedBox(width:7,),
-                       Text(local,style: const TextStyle(fontFamily: 'MyFont',fontSize: 13,fontWeight: FontWeight.w400,color: Color(0xff2B2849)),),
-                   
+                      Image.asset(
+                        Assets.location,
+                        height: 15,
+                        width: 12,
+                      ),
+                      const SizedBox(
+                        width: 7,
+                      ),
+                      Text(
+                        local,
+                        style: const TextStyle(
+                            fontFamily: 'MyFont',
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff2B2849)),
+                      ),
                     ],
-                                   ),
-                 )
+                  ),
+                )
               ],
             )),
       )

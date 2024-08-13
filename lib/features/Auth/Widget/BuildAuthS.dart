@@ -63,7 +63,7 @@ class BuildAuthScreen extends StatelessWidget {
           padding: const EdgeInsets.only(left: 52.0),
           child: CustomButton(
             onpress: () {
-              Navigator.pushReplacementNamed(context, '/home');
+              Navigator.pushReplacementNamed(context, '/layout');
             },
             teB: 'SIGN IN',
           ),

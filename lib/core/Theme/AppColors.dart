@@ -13,4 +13,5 @@ class AppColors {
   static const Color ColorC = Color(0xff4A43EC);
   static const Color ColorPlus = Color(0xff3F38DD);
   static const Color ColorDate = Color(0xff5669FF);
+  static const Color layout = Color(0xff2C3550);
 }

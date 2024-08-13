@@ -13,23 +13,26 @@ class CustomCategory extends StatelessWidget {
         width: 107,
         decoration:
             BoxDecoration(borderRadius: BorderRadius.circular(21), color: clr),
-        child: Row(
-          children: [
-            Image.asset(
-              img,
-              height: 17.33,
-              width: 17.33,
-            ),
-            const SizedBox(width: 8.30,),
-              Text(
-        Name,
-        style: const TextStyle(
-            fontFamily: 'MyFont',
-            fontSize: 15,
-            fontWeight: FontWeight.w400,
-            color: Colors.white),
-      ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(left: 10.0),
+          child: Row(
+            children: [
+              Image.asset(
+                img,
+                height: 17,
+                width: 17,
+              ),
+              const SizedBox(width: 8.30,),
+                Text(
+          Name,
+          style: const TextStyle(
+              fontFamily: 'MyFont',
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: Colors.white),
+                ),
+            ],
+          ),
         ));
   }
 }
