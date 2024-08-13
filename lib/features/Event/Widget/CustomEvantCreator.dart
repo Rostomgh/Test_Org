@@ -9,11 +9,13 @@ class CustomEventCreator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left:16 ),
       height: 60,
       width: 295,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Colors.white
+        borderRadius: BorderRadius.circular(30),
+        color: Colors.white,
+        border: Border.all(color: AppColors.primaryColor,width: 1)
       ),
       child:  Row(
         children: [

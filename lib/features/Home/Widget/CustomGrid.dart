@@ -6,6 +6,7 @@ import 'package:test_org/core/Theme/AppSizes.dart';
 import 'package:test_org/core/Ui/ThreePic.dart';
 
 class CustomGridEvent extends StatelessWidget {
+  final Function()? ontap;
   final String imgGrid;
   final String nameEvent;
   final String local;
@@ -13,75 +14,78 @@ class CustomGridEvent extends StatelessWidget {
       {super.key,
       required this.imgGrid,
       required this.nameEvent,
-      required this.local});
+      required this.local, this.ontap});
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveGridRow(children: [
-      ResponsiveGridCol(
-        xs:7,
-        child: Container(
-            height: AppSizes.heighGrid,
-            width: AppSizes.widthgrid,
-            alignment: const Alignment(0, 0),
-            color: AppColors.whiteColor,
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Image.asset(
-                    imgGrid,
-                    height: 131,
-                    width: 218,
+    return InkWell(
+      onTap: ontap,
+      child: ResponsiveGridRow(children: [
+        ResponsiveGridCol(
+          xs: 7,
+          child: Container(
+              height: AppSizes.heighGrid,
+              width: AppSizes.widthgrid,
+              alignment: const Alignment(0, 0),
+              color: AppColors.whiteColor,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Image.asset(
+                      imgGrid,
+                      height: 131,
+                      width: 218,
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  nameEvent,
-                  style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'MyFont',
-                      color: AppColors.blackColor),
-                ),
-                const SizedBox(
-                  height: AppSizes.ten,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 15.0),
-                  child: ThreePic(),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        Assets.location,
-                        height: 15,
-                        width: 12,
-                      ),
-                      const SizedBox(
-                        width: 7,
-                      ),
-                      Text(
-                        local,
-                        style: const TextStyle(
-                            fontFamily: 'MyFont',
-                            fontSize: 13,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xff2B2849)),
-                      ),
-                    ],
+                  const SizedBox(
+                    height: 10,
                   ),
-                )
-              ],
-            )),
-      )
-    ]);
+                  Text(
+                    nameEvent,
+                    style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'MyFont',
+                        color: AppColors.blackColor),
+                  ),
+                  const SizedBox(
+                    height: AppSizes.ten,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 15.0),
+                    child: ThreePic(),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15.0),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          Assets.location,
+                          height: 15,
+                          width: 12,
+                        ),
+                        const SizedBox(
+                          width: 7,
+                        ),
+                        Text(
+                          local,
+                          style: const TextStyle(
+                              fontFamily: 'MyFont',
+                              fontSize: 13,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff2B2849)),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )),
+        )
+      ]),
+    );
   }
 }

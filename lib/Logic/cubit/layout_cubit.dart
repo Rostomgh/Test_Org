@@ -11,9 +11,9 @@ class LayoutCubit extends Cubit<LayoutState> {
   List<Widget> pages = [
     HomeScreen(),
     ProfileScreen(),
-    // AddPostScreen(),
+    
     // EventsScreen(),
-    // ProfileScreen(),
+    ProfileScreen(),
   ];
   static LayoutCubit get(context) => BlocProvider.of(context);
   int currentIndex = 0;

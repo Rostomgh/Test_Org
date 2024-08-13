@@ -11,12 +11,12 @@ class MiniButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 67,
+      width: 70,
       height: 28,
       child: MaterialButton(
         onPressed: onpressed,
         shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                 color: colorB,
         child: Text(
           tit,

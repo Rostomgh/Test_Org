@@ -14,4 +14,5 @@ class AppSizes {
   static const double wrap = 1;
   static const double notif = 16;
   static const double rowI = 14;
+  
 }

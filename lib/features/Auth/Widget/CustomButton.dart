@@ -24,7 +24,7 @@ class CustomButton extends StatelessWidget {
             Text(teB,style: const TextStyle(
               fontFamily: 'MyFont',
               color: AppColors.whiteColor,fontSize: 18,fontWeight: FontWeight.w400),),
-            const SizedBox(width: 62,),
+            const Spacer(),
             const Customicon(),
         
         

@@ -31,4 +31,6 @@ class Assets {
   static const String mainadd = 'assets/mainadd.png';
   static const String sport = 'assets/sport.png';
   static const String next = 'assets/next.png';
+  static const String event='assets/event.png';
+  static const String back='assets/back.png';
 }

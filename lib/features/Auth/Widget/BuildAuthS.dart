@@ -71,7 +71,7 @@ class BuildAuthScreen extends StatelessWidget {
         const SizedBox(
           height: 24,
         ),
-        Center(
+        const Center(
             child: Text(
           'OR',
           style: TextStyle(
@@ -88,10 +88,12 @@ class BuildAuthScreen extends StatelessWidget {
           child: CustomSocial(
             LoginWith: 'Login with Google',
             img: Assets.google,
-            onpress: () {},
+            onpress: () {
+              Navigator.pushNamed(context, '/verifier');
+            },
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: AppSizes.Smedia,
         ),
         Padding(

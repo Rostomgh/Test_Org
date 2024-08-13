@@ -7,7 +7,7 @@ class CustomRowGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return  Padding(
       padding: EdgeInsets.only(left: 25.0),
       child: Row(
         children: [
@@ -16,6 +16,9 @@ class CustomRowGrid extends StatelessWidget {
               local: '36 Guild Street London, UK ',
               nameEvent: 'International Band Mu...', 
               imgGrid: Assets.grid1,
+              ontap: (){
+                Navigator.pushNamed(context, '/event');
+              },
             ),
           ),
         ],

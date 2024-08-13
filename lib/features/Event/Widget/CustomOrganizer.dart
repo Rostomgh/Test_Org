@@ -29,7 +29,7 @@ class MyWidget extends StatelessWidget {
           ],
         ) ,
         const Spacer(),
-        MiniButton(colorB:const Color(0xff4AD2E4),colorT: AppColors.primaryColor,tit: 'Follow',onpressed: (){}) ,
+        MiniButton(colorB:Color.fromARGB(255, 211, 215, 248),colorT: AppColors.primaryColor,tit: 'Follow',onpressed: (){}) ,
       ],
 
     );
