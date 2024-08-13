@@ -19,5 +19,8 @@ class Assets {
   static const String org='assets/org.png';
   static const String user='assets/user.png';
   static const String edit='assets/edit.png';
+  static const String add='assets/add.png';
+  static const String message='assets/message.png';
+  static const String notification='assets/notification.png';
 
 }

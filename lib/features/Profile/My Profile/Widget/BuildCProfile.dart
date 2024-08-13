@@ -20,10 +20,10 @@ class BuildCProfil extends StatelessWidget {
                 color: AppColors.AuthC,
               ),),
           ),
-            const SizedBox(height: AppSizes.ten,),
+            SizedBox(height: AppSizes.ten,),
         Wrap(
-          spacing: AppSizes.wrap, // Horizontal space between items
-          runSpacing: 10, // Vertical space between rows
+          spacing: AppSizes.wrap,
+          runSpacing: 10, 
           children: [
             CustomCInt(
               ColorC: Color(0xff6B7AED),

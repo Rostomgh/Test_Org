@@ -6,13 +6,13 @@ class CustomButtonP extends StatelessWidget {
   final String iconI;
   final String text;
   
-  final Color borderColor;
+  final Color ? borderColor;
   const CustomButtonP(
-      {super.key, required this.ColorButton, required this.ColorText, required this.iconI, required this.text, required this.borderColor});
+      {super.key, required this.ColorButton, required this.ColorText, required this.iconI, required this.text, this.borderColor});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 50,
       width: 154,
     
@@ -20,7 +20,9 @@ class CustomButtonP extends StatelessWidget {
           onPressed: () {},
           shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
-          side: BorderSide(color: borderColor, width: 2), // Add border color and width
+          side: borderColor != null 
+              ? BorderSide(color: borderColor!, width: 2)
+              : BorderSide.none, 
         ),
           
           color: ColorButton,
@@ -31,6 +33,7 @@ class CustomButtonP extends StatelessWidget {
                 height: 22,
                 width: 22,
               ),
+              const SizedBox(width: 12),
               Text(text,
                   style: TextStyle(
                     fontFamily: 'MyFont',

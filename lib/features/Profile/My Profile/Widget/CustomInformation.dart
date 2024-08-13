@@ -19,7 +19,7 @@ class CustomInformation extends StatelessWidget {
                 color: Color(0xff120D26),
               ),
             ),
-            SizedBox(height: 3), // Add a divider-like space between the texts
+            SizedBox(height: 3), 
             Text(
               'Following',
               style: TextStyle(
@@ -31,14 +31,14 @@ class CustomInformation extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(width: 15), // Add space between the columns
+        const SizedBox(width: 15),
         Container(
-          height: 20, // Adjust the height to match the text
-          width: 2, // Make the divider narrower
+          height: 20,
+          width: 2, 
           color: const Color(0xffDDDDDD),
         ),
         const SizedBox(
-            width: 25), // Add space between the divider and the next column
+            width: 25), 
         const Column(
           children: [
             Text(
