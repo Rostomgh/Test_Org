@@ -22,5 +22,6 @@ class Assets {
   static const String add='assets/add.png';
   static const String message='assets/message.png';
   static const String notification='assets/notification.png';
+  static const String invite='assets/invite.png';
 
 }

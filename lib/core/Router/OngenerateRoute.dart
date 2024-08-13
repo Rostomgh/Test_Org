@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_org/LogoS.dart';
+import 'package:test_org/core/Ui/LogoS.dart';
 import 'package:test_org/core/Router/ErrorRouter.dart';
 import 'package:test_org/features/Auth/AuthScreen.dart';
 import 'package:test_org/features/Auth/SignUpScreen.dart';
