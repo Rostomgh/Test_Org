@@ -11,7 +11,7 @@ class CustomRowGrid extends StatelessWidget {
       padding: EdgeInsets.only(left: 25.0),
       child: Row(
         children: [
-          Expanded( // Using Expanded to ensure it takes up available space within the Row
+          Expanded( 
             child: CustomGridEvent(
               local: '36 Guild Street London, UK ',
               nameEvent: 'International Band Mu...', 
@@ -21,6 +21,7 @@ class CustomRowGrid extends StatelessWidget {
               },
             ),
           ),
+          
         ],
       ),
     );

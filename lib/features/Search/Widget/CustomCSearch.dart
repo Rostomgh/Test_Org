@@ -4,7 +4,8 @@ import 'package:test_org/core/Ui/Date.dart';
 class CustomCScreen extends StatelessWidget {
   final String imgN;
   final String descp;
-  const CustomCScreen({super.key, required this.imgN, required this.descp});
+  final String descp1;
+  const CustomCScreen({super.key, required this.imgN, required this.descp, required this.descp1});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,10 @@ class CustomCScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(width:18,),
-            Date(descp: descp,)
+            Padding(
+              padding: const EdgeInsets.only(right: 27.0),
+              child: Date(descp: descp,descp1:descp1 ,),
+            )
           ],
         ),
       ),

@@ -9,7 +9,7 @@ class CustomCardInvit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left:40.0),
+      padding: const EdgeInsets.only(left:35.0),
       child: ResponsiveGridRow(children: [
         ResponsiveGridCol(
           xs: 10,

@@ -31,6 +31,11 @@ class Assets {
   static const String mainadd = 'assets/mainadd.png';
   static const String sport = 'assets/sport.png';
   static const String next = 'assets/next.png';
-  static const String event='assets/event.png';
-  static const String back='assets/back.png';
+  static const String event = 'assets/event.png';
+  static const String back = 'assets/back.png';
+  static const String sea1 = 'assets/sea1.png';
+  static const String sea2 = 'assets/sea2.png';
+  static const String sea3 = 'assets/sea3.png';
+  static const String sea4 = 'assets/sea4.png';
+  static const String sea5 = 'assets/sea5.png';
 }

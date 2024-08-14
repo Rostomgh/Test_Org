@@ -11,24 +11,20 @@ class BuildAllScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(children: [
       CustomCardInvite(
-        desc:"London's Mother's" ,
+          desc: "London's Mother's",
           imginvite: Assets.invite,
           time: 'Just now',
           invite: 'Invite Jo Malone',
           name: 'David Silbia'),
-          SizedBox(height: AppSizes.notif,),
-          CustomWithoutBu(
-              desc1: 'following you',
-              imginvite1: Assets.invite1,
-              invite1:'Started',
-              name1: 'Adnan Safi',
-              time1: '5min ago'),
-              
-
-
-          
-          
-
+      SizedBox(
+        height: AppSizes.notif,
+      ),
+      CustomWithoutBu(
+          desc1: 'following you',
+          imginvite1: Assets.invite1,
+          invite1: 'Started',
+          name1: 'Adnan Safi',
+          time1: '5min ago'),
     ]);
   }
 }

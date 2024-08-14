@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 58,
-      width: 271,
+      width: 275,
       child: MaterialButton(
          shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -23,7 +23,7 @@ class CustomButton extends StatelessWidget {
           children: [
             Text(teB,style: const TextStyle(
               fontFamily: 'MyFont',
-              color: AppColors.whiteColor,fontSize: 18,fontWeight: FontWeight.w400),),
+              color: AppColors.whiteColor,fontSize: 17,fontWeight: FontWeight.w400),),
             const Spacer(),
             const Customicon(),
         

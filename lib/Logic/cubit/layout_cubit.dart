@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
 import 'package:test_org/features/Profile/ProfileScreen.dart';
+import 'package:test_org/features/Search/SearchScreen.dart';
 
 part 'layout_state.dart';
 
@@ -10,7 +11,7 @@ class LayoutCubit extends Cubit<LayoutState> {
   LayoutCubit() : super(LayoutInitial());
   List<Widget> pages = [
     HomeScreen(),
-    ProfileScreen(),
+    SearchScreen(),
     
     // EventsScreen(),
     ProfileScreen(),
