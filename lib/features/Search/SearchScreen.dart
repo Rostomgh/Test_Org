@@ -28,7 +28,7 @@ class _SearchScreenState extends State<SearchScreen> {
         body: const SingleChildScrollView(
             child: Column(
           children: [
-            CustomSearchBar(),
+            CustomSearchBar(fillcolor: AppColors.whiteColor,clrB: AppColors.primaryColor,),
             SizedBox(
               height: 20,
             ),
