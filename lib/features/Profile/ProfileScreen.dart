@@ -61,7 +61,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               CustomPartAccount(
                 text: 'EVENT',
-                routeName: '/About',
+                routeName: '/notif',
               ),
               SizedBox(
                 width: 72

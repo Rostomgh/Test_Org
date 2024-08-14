@@ -8,6 +8,7 @@ import 'package:test_org/features/Auth/VerificationScreen.dart';
 import 'package:test_org/features/Event/AllEventScreen.dart';
 import 'package:test_org/features/Event/EventScreen.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
+import 'package:test_org/features/Notification/NotificationScreen.dart';
 import 'package:test_org/features/Onboarding/Onboarding.dart';
 import 'package:test_org/features/Profile/My%20Profile/MyProfileScreen.dart'; // Example: Import another screen
 
@@ -34,6 +35,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const MyProfileScreen());
         case '/Allevent':
         return MaterialPageRoute(builder: (_) => const AllEventScreen());
+        case '/notif':
+        return MaterialPageRoute(builder: (_) => const NotificationScreen());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

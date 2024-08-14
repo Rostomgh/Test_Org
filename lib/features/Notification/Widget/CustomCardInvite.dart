@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
 import 'package:test_org/features/Notification/Widget/CustomNameInvite.dart';
 
@@ -24,13 +25,16 @@ class CustomCardInvite extends StatelessWidget {
       ),
       const SizedBox(width: AppSizes.rowI),
        CustomNameInvite(invite:invite ,name: name,desc:desc,),
-      const SizedBox(width: AppSizes.Smedia,),
-      Text(time,style: const TextStyle(
-        fontFamily: 'MyFont',
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: Color(0xff3C3E56),
-      ),)
+      Spacer(),
+      Padding(
+        padding: const EdgeInsets.only(right: 3.0),
+        child: Text(time,style: const TextStyle(
+          fontFamily: 'MyFont',
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: Color(0xff3C3E56),
+        ),),
+      )
     ]);
   }
 }

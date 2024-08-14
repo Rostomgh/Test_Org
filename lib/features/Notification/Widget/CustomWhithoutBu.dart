@@ -61,13 +61,16 @@ class CustomWithoutBu extends StatelessWidget {
             ),
           )
         ]),
-          const SizedBox(width:87),
-      Text(time1,style: const TextStyle(
-        fontFamily: 'MyFont',
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: Color(0xff3C3E56),
-      ),)
+          Spacer(),
+      Padding(
+        padding: const EdgeInsets.only(right: 3.0),
+        child: Text(time1,style: const TextStyle(
+          fontFamily: 'MyFont',
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: Color(0xff3C3E56),
+        ),),
+      )
       ],
     );
   }

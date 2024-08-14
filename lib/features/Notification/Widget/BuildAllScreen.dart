@@ -24,7 +24,27 @@ class BuildAllScreen extends StatelessWidget {
           imginvite1: Assets.invite1,
           invite1: 'Started',
           name1: 'Adnan Safi',
-          time1: '5min ago'),
+          time1: '5 min ago'),
+            SizedBox(
+        height: AppSizes.notif,
+      ),
+          CustomCardInvite(
+          desc: " Evening of Smooth Jazz",
+          imginvite: Assets.invite3,
+          time: '20 min ago',
+          invite: 'Invite A virtual',
+          name: 'Joan Baker'),
+                  SizedBox(
+        height: AppSizes.notif,
+      ),
+        CustomWithoutBu(
+          desc1: 'following you',
+          imginvite1: Assets.invite4,
+          invite1: 'Started',
+          name1: 'Ronald C.Kinch',
+          time1: '5 min ago'),
     ]);
   }
 }
+
+
