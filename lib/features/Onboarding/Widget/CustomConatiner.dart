@@ -42,6 +42,7 @@ class CustomContainer extends StatelessWidget {
             const Text(
               'In publishing and graphic design, Lorem is a placeholder text commonly',
               style: TextStyle(
+                fontFamily: 'MyFont',
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
                 color: AppColors.whiteColor,

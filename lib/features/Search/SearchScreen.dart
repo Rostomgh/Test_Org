@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
 import 'package:test_org/features/Search/Widget/AllSearch.dart';
 import 'package:test_org/features/Search/Widget/CustomSearchBar.dart';
@@ -28,7 +29,11 @@ class _SearchScreenState extends State<SearchScreen> {
         body: const SingleChildScrollView(
             child: Column(
           children: [
-            CustomSearchBar(fillcolor: AppColors.whiteColor,clrB: AppColors.primaryColor,),
+            CustomSearchBar(
+              imgFiltre: Assets.filtre,
+              ColorText: AppColors.whiteColor,
+              
+              fillcolor: AppColors.whiteColor,clrB: AppColors.primaryColor,),
             SizedBox(
               height: 20,
             ),

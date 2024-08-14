@@ -4,32 +4,40 @@ import 'package:test_org/core/Theme/AppColors.dart';
 
 class CustomSearchBar extends StatelessWidget {
   final Color fillcolor;
-  final Color clrB ;
-  const CustomSearchBar({super.key, required this.fillcolor, required this.clrB});
+  final Color clrB;
+  
+  final Color ColorText;
+  final String imgFiltre;
+  const CustomSearchBar(
+      {super.key,
+      required this.fillcolor,
+      required this.clrB,
+       required this.ColorText, required this.imgFiltre});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      padding:  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: TextFormField(
         decoration: InputDecoration(
             hintText: 'Search...',
-            hintStyle: const TextStyle(
-              color: AppColors.blackColor,
+            hintStyle:  TextStyle(
+              color: ColorText,
               fontFamily: 'MyFont',
               fontSize: 20,
               fontWeight: FontWeight.w100,
             ),
-            prefixIcon:  Icon(
+            prefixIcon: Icon(
               Icons.search,
               color: clrB,
               size: 35,
             ),
             suffixIcon: IconButton(
                 icon: Image.asset(
-                  Assets.filtre,
+                  imgFiltre,
                   width: 75,
                   height: 32,
+                  
                 ),
                 onPressed: () {}),
             border: OutlineInputBorder(

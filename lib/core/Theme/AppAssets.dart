@@ -42,4 +42,5 @@ class Assets {
   static const String exploreevent='assets/exploreevent.png';
   static const String invite3 = 'assets/invite3.png';
   static const String invite4 = 'assets/invite4.png';
+  static const String filtre2='assets/filtre2.png';
 }
