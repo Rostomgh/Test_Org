@@ -1,7 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test_org/features/Event/EventExpolre.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
+import 'package:test_org/features/Onboarding/Onboarding.dart';
 import 'package:test_org/features/Profile/ProfileScreen.dart';
 import 'package:test_org/features/Search/SearchScreen.dart';
 
@@ -12,8 +14,8 @@ class LayoutCubit extends Cubit<LayoutState> {
   List<Widget> pages = [
     HomeScreen(),
     SearchScreen(),
-    
-    // EventsScreen(),
+    EventExploreScreen(),
+    OnboardingP(),
     ProfileScreen(),
   ];
   static LayoutCubit get(context) => BlocProvider.of(context);

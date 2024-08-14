@@ -7,7 +7,8 @@ import 'package:test_org/features/Auth/SignUpScreen.dart';
 import 'package:test_org/features/Auth/VerificationScreen.dart';
 import 'package:test_org/features/Event/EventScreen.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
-import 'package:test_org/features/Onboarding/Onboarding.dart'; // Example: Import another screen
+import 'package:test_org/features/Onboarding/Onboarding.dart';
+import 'package:test_org/features/Profile/My%20Profile/MyProfileScreen.dart'; // Example: Import another screen
 
 class AppRouter {
   Route? onGenerateRoute(RouteSettings settings) {
@@ -28,6 +29,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const LayoutScreen());
       case '/verifier':
         return MaterialPageRoute(builder: (_) => const VerificationScreen());
+        case '/About':
+        return MaterialPageRoute(builder: (_) => const MyProfileScreen());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());
