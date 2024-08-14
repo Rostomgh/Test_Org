@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_org/core/Ui/Gmap.dart';
 import 'package:test_org/core/Ui/Layout.dart';
 import 'package:test_org/core/Ui/LogoS.dart';
 import 'package:test_org/core/Router/ErrorRouter.dart';
@@ -37,6 +38,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const AllEventScreen());
         case '/notif':
         return MaterialPageRoute(builder: (_) => const NotificationScreen());
+        case '/map':
+        return MaterialPageRoute(builder: (_) => const MapSample());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());
