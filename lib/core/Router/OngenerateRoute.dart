@@ -5,6 +5,7 @@ import 'package:test_org/core/Router/ErrorRouter.dart';
 import 'package:test_org/features/Auth/AuthScreen.dart';
 import 'package:test_org/features/Auth/SignUpScreen.dart';
 import 'package:test_org/features/Auth/VerificationScreen.dart';
+import 'package:test_org/features/Event/AllEventScreen.dart';
 import 'package:test_org/features/Event/EventScreen.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
 import 'package:test_org/features/Onboarding/Onboarding.dart';
@@ -31,6 +32,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const VerificationScreen());
         case '/About':
         return MaterialPageRoute(builder: (_) => const MyProfileScreen());
+        case '/Allevent':
+        return MaterialPageRoute(builder: (_) => const AllEventScreen());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

@@ -29,7 +29,9 @@ class _EventExploreScreenState extends State<EventExploreScreen> {
         children: [
            Padding(
             padding: const EdgeInsets.only(left: 40.0, top: 5),
-            child: CustomStackC(tap: (){},),
+            child: CustomStackC(tap: (){
+              Navigator.pushNamed(context, '/Allevent');
+            },),
           ),
           const SizedBox(height: 100,),
           Image.asset(Assets.exploreevent,height:300,)
