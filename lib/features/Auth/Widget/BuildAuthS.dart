@@ -29,32 +29,38 @@ class BuildAuthScreen extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        CustomInput(
-          icon: Icons.email_outlined,
-          hint: 'abc@email.com',
-          obc: true,
-          keyboardType: TextInputType.emailAddress,
-          valid: (value) {
-            if (value == '') {
-              return 'Enter Email';
-            }
-            return null;
-          },
+        Padding(
+          padding: const EdgeInsets.only(left: 37.0,right: 30),
+          child: CustomInput(
+            icon: Icons.email_outlined,
+            hint: 'abc@email.com',
+            obc: true,
+            keyboardType: TextInputType.emailAddress,
+            valid: (value) {
+              if (value == '') {
+                return 'Enter Email';
+              }
+              return null;
+            },
+          ),
         ),
         const SizedBox(
           height: 20,
         ),
-        CustomInput(
-          icon: Icons.email_outlined,
-          hint: 'Your password',
-          obc: true,
-          keyboardType: TextInputType.emailAddress,
-          valid: (value) {
-            if (value == '') {
-              return 'Enter Email';
-            }
-            return null;
-          },
+        Padding(
+          padding: const EdgeInsets.only(left: 37.0,right: 30),
+          child: CustomInput(
+            icon: Icons.email_outlined,
+            hint: 'Your password',
+            obc: true,
+            keyboardType: TextInputType.emailAddress,
+            valid: (value) {
+              if (value == '') {
+                return 'Enter Email';
+              }
+              return null;
+            },
+          ),
         ),
         const SizedBox(
           height: 70,

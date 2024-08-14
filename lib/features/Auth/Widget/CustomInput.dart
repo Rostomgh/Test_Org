@@ -20,38 +20,35 @@ class CustomInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 30, right: 30),
-      child: Container(
-        width: 317,
-        height: 56,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.57),
-        ),
-        child: TextFormField(
-          keyboardType: keyboardType,
-          obscureText: obc,
-          validator: valid,
-          controller: mycontroller,
-          textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-            contentPadding:
-                const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
-            hintText: hint,
-            hintStyle: const TextStyle(
-              color: AppColors.hintColor,
-              fontWeight: FontWeight.w500,
-            ),
-            prefixIcon: icon != null
-                ? Icon(
-                    icon,
-                    color: AppColors.hintColor, // Color of the icon
-                  )
-                : null,
+    return Container(
+      width: 317,
+      height: 56,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.57),
+      ),
+      child: TextFormField(
+        keyboardType: keyboardType,
+        obscureText: obc,
+        validator: valid,
+        controller: mycontroller,
+        textInputAction: TextInputAction.next,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
           ),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+          hintText: hint,
+          hintStyle: const TextStyle(
+            color: AppColors.hintColor,
+            fontWeight: FontWeight.w500,
+          ),
+          prefixIcon: icon != null
+              ? Icon(
+                  icon,
+                  color: AppColors.hintColor, // Color of the icon
+                )
+              : null,
         ),
       ),
     );

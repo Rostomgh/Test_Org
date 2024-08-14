@@ -34,7 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
         SizedBox(
           height: AppSizes.Ellips,
         ),
-        CustomCardInvit(),
+        Padding(
+          padding: EdgeInsets.only(left: 24.0,right: 23),
+          child: CustomCardInvit(),
+        ),
         SizedBox(
           height: AppSizes.Ellips,
         ),

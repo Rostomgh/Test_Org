@@ -17,19 +17,19 @@ class CustomButton extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         color: AppColors.primaryColor,
       onPressed: onpress,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 80),
-        child: Row(
-          children: [
-            Text(teB,style: const TextStyle(
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 50.0),
+            child: Text(teB,style: const TextStyle(
               fontFamily: 'MyFont',
               color: AppColors.whiteColor,fontSize: 17,fontWeight: FontWeight.w400),),
-            const Spacer(),
-            const Customicon(),
-        
-        
-          ],
-        ),
+          ),
+          const Spacer(),
+          const Customicon(),
+      
+      
+        ],
       ),
       
       

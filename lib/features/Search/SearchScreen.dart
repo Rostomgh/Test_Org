@@ -31,13 +31,17 @@ class _SearchScreenState extends State<SearchScreen> {
           children: [
             CustomSearchBar(
               imgFiltre: Assets.filtre,
-              ColorText: AppColors.whiteColor,
-              
-              fillcolor: AppColors.whiteColor,clrB: AppColors.primaryColor,),
+              ColorText: AppColors.blackColor,
+              fillcolor: AppColors.whiteColor,
+              clrB: AppColors.primaryColor,
+            ),
             SizedBox(
               height: 20,
             ),
-            AllSearch(),
+            Padding(
+              padding: EdgeInsets.only(left: 21.0, right: 27),
+              child: AllSearch(),
+            ),
           ],
         )));
   }

@@ -32,7 +32,7 @@ class _EventScreenState extends State<EventScreen> {
                     top: 35,
                     left: 0,
                     child: IconButton(
-                      onPressed: (){
+                      onPressed: () {
                         Navigator.pop(context);
                       },
                       icon: Image.asset(
@@ -52,7 +52,7 @@ class _EventScreenState extends State<EventScreen> {
                           fontWeight: FontWeight.w400),
                     )),
                 const Positioned(
-                  bottom: 4,
+                  bottom: -15,
                   // left: 40,
                   right: 40,
                   child: CustomEventCreator(),
@@ -68,7 +68,7 @@ class _EventScreenState extends State<EventScreen> {
                 'International Band Music Concert',
                 style: TextStyle(
                     fontSize: 35,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w200,
                     fontFamily: 'MyFont',
                     color: AppColors.AuthC),
               ),
