@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_org/Logic/cubit/layout_cubit.dart';
 import 'package:test_org/core/Router/OngenerateRoute.dart';
+import 'package:test_org/core/Ui/LogoS.dart';
 import 'package:test_org/features/Auth/AuthScreen.dart';
 
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light(useMaterial3: true),
-        home: const AuthScreen(),
+        home: const LogoScreen(),
         onGenerateRoute: (settings) => AppRouter().onGenerateRoute(settings),
       ),
     );
