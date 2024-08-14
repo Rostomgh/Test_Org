@@ -38,4 +38,5 @@ class Assets {
   static const String sea3 = 'assets/sea3.png';
   static const String sea4 = 'assets/sea4.png';
   static const String sea5 = 'assets/sea5.png';
+  static const String filtre='assets/filtre.png';
 }

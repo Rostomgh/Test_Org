@@ -9,32 +9,30 @@ class CustomCScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(14.0),
-      child: Container(
-        height: 112,
-        width: 327,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left:10.0),
-              child: Image.asset(
-                imgN,
-                height: 92,
-                width: 79,
-              ),
+    return Container(
+      height: 112,
+      width: 327,
+      decoration: BoxDecoration(
+        
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left:10.0),
+            child: Image.asset(
+              imgN,
+              height: 92,
+              width: 79,
             ),
-            const SizedBox(width:18,),
-            Padding(
-              padding: const EdgeInsets.only(right: 27.0),
-              child: Date(descp: descp,descp1:descp1 ,),
-            )
-          ],
-        ),
+          ),
+          const SizedBox(width:18,),
+          Padding(
+            padding: const EdgeInsets.only(right: 27.0),
+            child: Date(descp: descp,descp1:descp1 ,),
+          )
+        ],
       ),
     );
   }
