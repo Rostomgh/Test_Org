@@ -15,7 +15,6 @@ class _GmapPState extends State<GmapP> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: GoogleMap(
         myLocationButtonEnabled: true,
         mapType: MapType.normal,
@@ -23,6 +22,9 @@ class _GmapPState extends State<GmapP> {
           target: LatLng(latitude, longitude),
           zoom: 5,
         ),
+        onMapCreated: (GoogleMapController controller) {
+          
+        },
       ),
     );
   }

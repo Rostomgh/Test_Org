@@ -10,6 +10,7 @@ import 'package:test_org/features/Event/AllEventScreen.dart';
 import 'package:test_org/features/Event/EventScreen.dart';
 import 'package:test_org/features/Home/HomeScreen.dart';
 import 'package:test_org/features/Notification/NotificationScreen.dart';
+import 'package:test_org/features/Notification/Widget/CustomNotifiacationError.dart';
 import 'package:test_org/features/Onboarding/Onboarding.dart';
 import 'package:test_org/features/Profile/My%20Profile/MyProfileScreen.dart'; // Example: Import another screen
 
@@ -40,6 +41,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const NotificationScreen());
         case '/map':
         return MaterialPageRoute(builder: (_) => const GmapP());
+        case '/nonotif':
+        return MaterialPageRoute(builder: (_) => const CutomNotification());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

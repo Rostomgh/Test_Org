@@ -17,13 +17,16 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(
         appBar: AppBar(
           elevation: 3,
-          title: const Text(
-            'Search',
-            style: TextStyle(
-                fontFamily: 'MyFont',
-                fontSize: 24,
-                fontWeight: FontWeight.w400,
-                color: AppColors.AuthC),
+          title: const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              'Search',
+              style: TextStyle(
+                  fontFamily: 'MyFont',
+                  fontSize: 24,
+                  fontWeight: FontWeight.w400,
+                  color: AppColors.AuthC),
+            ),
           ),
         ),
         body: const SingleChildScrollView(

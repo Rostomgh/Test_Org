@@ -68,8 +68,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               CustomPartAccount(
                 text: 'REVIEW',
-                routeName: '/About',
+                routeName: '/nonotif',
               ),
+              
             ],
           ),
         ]));

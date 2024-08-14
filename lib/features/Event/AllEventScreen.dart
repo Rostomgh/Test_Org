@@ -14,13 +14,16 @@ class _AllEventScreenState extends State<AllEventScreen> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-          title: const Text(
-            'Events',
-            style: TextStyle(
-                fontFamily: 'MyFont',
-                fontSize: 24,
-                fontWeight: FontWeight.w400,
-                color: AppColors.AuthC),
+          title: const Padding(
+            padding: EdgeInsets.only(left:0.0),
+            child: Text(
+              'Events',
+              style: TextStyle(
+                  fontFamily: 'MyFont',
+                  fontSize: 24,
+                  fontWeight: FontWeight.w400,
+                  color: AppColors.AuthC),
+            ),
           ),
           elevation: 3,
           actions: [
