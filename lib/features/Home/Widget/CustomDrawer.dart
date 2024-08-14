@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
+import 'package:test_org/core/Theme/AppColors.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -12,18 +13,17 @@ class CustomDrawer extends StatelessWidget {
         children: [
           Container(
             height: 120,
-            color: Colors.blue, // You can customize this
-            child: Padding(
+            color: AppColors.whiteColor,
+            child:  Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Row(
+              child: Column(
                 children: [
-                  CircleAvatar(
-                    backgroundImage: AssetImage(Assets.profile), // Add your profile image asset
-                    radius: 40,
-                  ),
-                  const SizedBox(width: 16),
+                Image.asset(
+                  Assets.invite3,height: 60,width: 60,
+                ),
+                  const SizedBox(height: 12),
                   const Text(
-                    'Your Name', // You can fetch user's name dynamically
+                    'Your Name', 
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -38,8 +38,8 @@ class CustomDrawer extends StatelessWidget {
             leading: const Icon(Icons.home),
             title: const Text('Home'),
             onTap: () {
-              Navigator.of(context).pop(); // Close the drawer
-              // Navigate to home screen or perform other actions
+              Navigator.of(context).pop(); 
+              
             },
           ),
           ListTile(
@@ -47,7 +47,7 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Profile'),
             onTap: () {
               Navigator.of(context).pop();
-              // Navigate to profile screen or perform other actions
+              
             },
           ),
           ListTile(
@@ -55,7 +55,6 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Settings'),
             onTap: () {
               Navigator.of(context).pop();
-              // Navigate to settings screen or perform other actions
             },
           ),
           ListTile(
@@ -63,7 +62,7 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Logout'),
             onTap: () {
               Navigator.of(context).pop();
-              // Perform logout actions
+              
             },
           ),
         ],

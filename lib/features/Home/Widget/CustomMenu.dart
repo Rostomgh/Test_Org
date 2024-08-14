@@ -13,7 +13,9 @@ class CustomMenu extends StatelessWidget {
         //mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          IconButton(onPressed: (){}, icon: Image.asset(Assets.menu,height: 19,width: 24,)),
+          IconButton(onPressed: (){
+              Scaffold.of(context).openDrawer(); 
+          }, icon: Image.asset(Assets.menu,height: 19,width: 24,)),
           const SizedBox(width: 80,),
           const Column(
             //mainAxisAlignment: MainAxisAlignment.center,
