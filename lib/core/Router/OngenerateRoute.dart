@@ -12,7 +12,8 @@ import 'package:test_org/features/Home/HomeScreen.dart';
 import 'package:test_org/features/Notification/NotificationScreen.dart';
 import 'package:test_org/features/Notification/Widget/CustomNotifiacationError.dart';
 import 'package:test_org/features/Onboarding/Onboarding.dart';
-import 'package:test_org/features/Profile/My%20Profile/MyProfileScreen.dart'; // Example: Import another screen
+import 'package:test_org/features/Profile/My%20Profile/MyProfileScreen.dart';
+import 'package:test_org/features/Search/FiltreScreen.dart'; // Example: Import another screen
 
 class AppRouter {
   Route? onGenerateRoute(RouteSettings settings) {
@@ -43,6 +44,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const GmapP());
         case '/nonotif':
         return MaterialPageRoute(builder: (_) => const CutomNotification());
+        case '/filtre':
+        return MaterialPageRoute(builder: (_) => const FiltreScreen());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

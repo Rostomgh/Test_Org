@@ -99,9 +99,10 @@ class _EventScreenState extends State<EventScreen> {
               height: AppSizes.Smedia,
             ),
             const Padding(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.only(left: 24.0,right: 24),
               child: MyWidget(),
             ),
+            const SizedBox(height: 20,),
             const Padding(
               padding: EdgeInsets.only(left: 20.0),
               child: Text(
@@ -119,7 +120,7 @@ class _EventScreenState extends State<EventScreen> {
             const Padding(
               padding: EdgeInsets.only(left: 20.0, right: 20),
               child: Opacity(
-                opacity: 0.6, // Adjust this value to control transparency
+                opacity: 0.6, 
                 child: Text(
                   'Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available',
                   style: TextStyle(
