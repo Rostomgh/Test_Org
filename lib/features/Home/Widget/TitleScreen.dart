@@ -21,16 +21,25 @@ class TitleScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: AppColors.AuthC),
           ),
-          Spacer(),
-          const Text(
-            'See All',
-            style: TextStyle(
-                fontFamily: 'MyFont',
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-                color: Color(0xff747688)),
+          const Spacer(),
+           Padding(
+            padding: const EdgeInsets.only(right: 23.0),
+            child: Row(
+              children: [
+                const Text(
+                  'See All',
+                  style: TextStyle(
+                      fontFamily: 'MyFont',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      color: Color(0xff747688)),
+                ),
+                const SizedBox(width: 1.5),
+                Image.asset(Assets.next, height: 9,width: 6.54),
+              ],
+            ),
           ),
-          Image.asset(Assets.next, height: 9, width: 6.54),
+          
         ],
       ),
     );

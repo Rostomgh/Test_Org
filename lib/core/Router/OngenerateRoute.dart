@@ -39,7 +39,7 @@ class AppRouter {
         case '/notif':
         return MaterialPageRoute(builder: (_) => const NotificationScreen());
         case '/map':
-        return MaterialPageRoute(builder: (_) => const MapSample());
+        return MaterialPageRoute(builder: (_) => const GmapP());
 
       default:
         return MaterialPageRoute(builder: (_) => const ErrorRoute());

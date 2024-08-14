@@ -14,7 +14,7 @@ class LayoutCubit extends Cubit<LayoutState> {
     const HomeScreen(),
     const SearchScreen(),
     const EventExploreScreen(),
-    const MapSample(),
+    const GmapP(),
     const ProfileScreen(),
   ];
   static LayoutCubit get(context) => BlocProvider.of(context);

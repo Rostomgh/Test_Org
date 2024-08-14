@@ -36,6 +36,7 @@ class CustomContainerStart extends StatelessWidget {
               
               fillcolor: AppColors.ColorC,clrB: AppColors.whiteColor,), 
           ),
+          
         ],
       ),
     );

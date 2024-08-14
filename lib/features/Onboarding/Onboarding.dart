@@ -85,6 +85,7 @@ class CustomContainer extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
+                fontFamily: 'MyFont',
                 fontSize: 24,
                 fontWeight: FontWeight.w400,
                 color: AppColors.whiteColor,
@@ -95,6 +96,7 @@ class CustomContainer extends StatelessWidget {
             const Text(
               'In publishing and graphic design, Lorem is a placeholder text commonly',
               style: TextStyle(
+                fontFamily: 'MyFont',
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
                 color: AppColors.whiteColor,
@@ -119,6 +121,7 @@ class CustomContainer extends StatelessWidget {
                     child: const Text(
                       'SKIP',
                       style: TextStyle(
+                        fontFamily: 'MyFont',
                         color: AppColors.whiteColor,
                         fontSize: 18,
                         fontWeight: FontWeight.w200,
@@ -153,6 +156,7 @@ class CustomContainer extends StatelessWidget {
                     child: const Text(
                       'NEXT',
                       style: TextStyle(
+                        fontFamily: 'MyFont',
                         color: AppColors.whiteColor,
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
