@@ -17,7 +17,7 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(
         appBar: AppBar(
           elevation: 3,
-          title:  const Padding(
+          title: const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
               'Search',
@@ -29,21 +29,26 @@ class _SearchScreenState extends State<SearchScreen> {
             ),
           ),
         ),
-        body:  SingleChildScrollView(
+        body: SingleChildScrollView(
             child: Column(
           children: [
-            CustomSearchBar(
-              onpress: (){Navigator.pushNamed(context, '/filtre');},
-              imgFiltre: Assets.filtre,
-              ColorText: AppColors.blackColor,
-              fillcolor: AppColors.whiteColor,
-              clrB: AppColors.primaryColor,
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0,right: 10),
+              child: CustomSearchBar(
+                onpress: () {
+                  Navigator.pushNamed(context, '/filtre');
+                },
+                imgFiltre: Assets.filtre,
+                ColorText: Color.fromARGB(255, 121, 118, 118),
+                fillcolor: AppColors.whiteColor,
+                clrB: AppColors.primaryColor,
+              ),
             ),
             const SizedBox(
               height: 20,
             ),
             const Padding(
-              padding: EdgeInsets.only(left: 21.0, right: 27),
+              padding: EdgeInsets.only(left: 21.0, right: 22),
               child: AllSearch(),
             ),
           ],

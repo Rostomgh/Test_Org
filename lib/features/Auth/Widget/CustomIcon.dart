@@ -3,10 +3,13 @@ import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
 
 class Customicon extends StatelessWidget {
-  const Customicon({super.key});
+  final String imgN;
+  final double w;
+  final double h;
+  const Customicon({super.key, required this.imgN, required this.w, required this.h});
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(Assets.Button,height: AppSizes.Ellips,width: AppSizes.Ellips,);
+    return Image.asset(imgN,height:h,width:w );
   }
 }

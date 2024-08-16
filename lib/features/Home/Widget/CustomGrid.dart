@@ -32,11 +32,24 @@ class CustomGridEvent extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Image.asset(
-                      imgGrid,
-                      height: 131,
-                      width: 218,
-                    ),
+                    child: Stack(
+                      children:[ Image.asset(
+                        imgGrid,
+                        height: 131,
+                        width: 218,
+                      ),
+                      Positioned(
+                        top: 10,
+                        left: 4,
+                        child: Image.asset(
+                          Assets.juin,
+                          height: 45,
+                          width: 45,
+                          fit: BoxFit.fill,
+                          
+                        ),
+                      )
+                ]),
                   ),
                   const SizedBox(
                     height: 10,

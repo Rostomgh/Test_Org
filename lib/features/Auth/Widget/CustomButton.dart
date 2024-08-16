@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
+import 'package:test_org/core/Theme/AppSizes.dart';
 import 'package:test_org/features/Auth/Widget/CustomIcon.dart';
 
 class CustomButton extends StatelessWidget {
@@ -13,33 +15,29 @@ class CustomButton extends StatelessWidget {
       height: 58,
       width: 275,
       child: MaterialButton(
-         shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         color: AppColors.primaryColor,
-      onPressed: onpress,
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 50.0),
-            child: Text(teB,style: const TextStyle(
-              fontFamily: 'MyFont',
-              color: AppColors.whiteColor,fontSize: 17,fontWeight: FontWeight.w400),),
-          ),
-          const Spacer(),
-          const Customicon(),
-      
-      
-        ],
+        onPressed: onpress,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              child: Text(
+                teB,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontFamily: 'MyFont',
+                  color: AppColors.whiteColor,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ),
+            const Customicon(imgN: Assets.Button,h:  AppSizes.Ellips,w:  AppSizes.Ellips,),  
+          ],
+        ),
       ),
-      
-      
-      
-      ),
-    )
-    
-    
-    
-    
-    ;
+    );
   }
 }

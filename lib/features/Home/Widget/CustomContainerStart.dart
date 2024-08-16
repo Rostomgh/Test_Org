@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
+import 'package:test_org/features/Home/Widget/CustomBuildCategory.dart';
 import 'package:test_org/features/Home/Widget/CustomMenu.dart';
 import 'package:test_org/features/Search/Widget/CustomSearchBar.dart';
 
 class CustomContainerStart extends StatelessWidget {
-  const CustomContainerStart({super.key});
+  const   CustomContainerStart({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,19 +24,21 @@ class CustomContainerStart extends StatelessWidget {
         children: [
           Positioned(
             top: 10,
-            left: 10,
+            left: 24,
+            right: 24,
             child: CustomMenu(), 
           ),
           Positioned(
-            bottom: 10,
+            bottom: 15,
             left: 10,
             right: 10,
             child: CustomSearchBar(
               imgFiltre: Assets.filtre2,
-              ColorText: AppColors.whiteColor,
+              ColorText: Color.fromARGB(255, 121, 118, 118),
               
               fillcolor: AppColors.ColorC,clrB: AppColors.whiteColor,), 
           ),
+          
           
         ],
       ),

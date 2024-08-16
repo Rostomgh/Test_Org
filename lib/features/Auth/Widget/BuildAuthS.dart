@@ -90,8 +90,9 @@ class BuildAuthScreen extends StatelessWidget {
           height: AppSizes.bettweenL,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 50.0),
+          padding: const EdgeInsets.only(left: 50.0,right: 50),
           child: CustomSocial(
+        
             LoginWith: 'Login with Google',
             img: Assets.google,
             onpress: () {
@@ -103,9 +104,10 @@ class BuildAuthScreen extends StatelessWidget {
           height: AppSizes.Smedia,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 50.0),
+          padding: const EdgeInsets.only(left: 50.0,right: 50),
           child: CustomSocial(
-            LoginWith: 'Login with Facebbok',
+        
+            LoginWith: 'Login with Facebok',
             img: Assets.facebbok,
             onpress: () {},
           ),

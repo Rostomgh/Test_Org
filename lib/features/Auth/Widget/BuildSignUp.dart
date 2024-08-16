@@ -93,13 +93,15 @@ class CustomBuildSignUp extends StatelessWidget {
               const SizedBox(height: AppSizes.bettweenL,),
         Padding(
           padding: const EdgeInsets.only(left: 50.0),
-          child: CustomSocial(LoginWith: 'Login with Google',img: Assets.google,onpress:(){} ,),
+          child: CustomSocial(
+        LoginWith: 'Login with Google',img: Assets.google,onpress:(){} ,),
         
         ),
         const SizedBox(height: AppSizes.Smedia,),
          Padding(
            padding: const EdgeInsets.only(left: 50.0),
-           child: CustomSocial(LoginWith: 'Login with Facebbok',img: Assets.facebbok,onpress:(){} ,),
+           child: CustomSocial(
+            LoginWith: 'Login with Facebbok',img: Assets.facebbok,onpress:(){} ,),
          ),
 
       ],

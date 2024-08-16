@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppSizes.dart';
+import 'package:test_org/features/Auth/Widget/CustomIcon.dart';
 
 class CustomMenu extends StatelessWidget {
   const CustomMenu({super.key});
@@ -28,7 +29,7 @@ class CustomMenu extends StatelessWidget {
             ],
           ),
           const SizedBox(width: 80,),
-          IconButton(onPressed: (){}, icon:Image.asset(Assets.notif,height: 26,width: 25,) ),
+          Customicon(imgN: Assets.orgg,h: 45,w: 32,),
           
           
       

@@ -43,4 +43,13 @@ class Assets {
   static const String invite3 = 'assets/invite3.png';
   static const String invite4 = 'assets/invite4.png';
   static const String filtre2='assets/filtre2.png';
+  static const String ball='assets/ball.png';
+  static const String art='assets/art.png';
+  static const String music='assets/music.png';
+  static const String food='assets/food.png';
+  static const String goo='assets/goo.png';
+  static const String graph='assets/graph.png';
+  static const String orgg='assets/notifmenu.png';
+  static const String partage='assets/partage.png';
+  static const String juin ='assets/juin.png';
 }

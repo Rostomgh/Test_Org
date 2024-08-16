@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_org/core/Theme/AppAssets.dart';
 import 'package:test_org/core/Theme/AppColors.dart';
 
 class CustomSearchBar extends StatelessWidget {
@@ -7,7 +6,7 @@ class CustomSearchBar extends StatelessWidget {
   final Color clrB;
   final Color ColorText;
   final String imgFiltre;
-  final Function() ? onpress;  // Optional callback for the filter icon
+  final Function()? onpress;
 
   const CustomSearchBar({
     super.key,
@@ -15,7 +14,7 @@ class CustomSearchBar extends StatelessWidget {
     required this.clrB,
     required this.ColorText,
     required this.imgFiltre,
-    this.onpress,  // Optional parameter for filter icon action
+    this.onpress,
   });
 
   @override
@@ -31,13 +30,24 @@ class CustomSearchBar extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.w100,
           ),
-          prefixIcon: Icon(
-            Icons.search,
-            color: clrB,
-            size: 35,
+          prefixIcon: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.search,
+                color: clrB,
+                size: 35,
+              ),
+              SizedBox(width: 5),
+              Container(
+                width: 1, 
+                height: 30, 
+              color: AppColors.primaryColor,
+              ),
+            ],
           ),
           suffixIcon: IconButton(
-            onPressed: onpress,  // Action when the filter icon is pressed
+            onPressed: onpress,
             icon: Image.asset(
               imgFiltre,
               width: 75,
