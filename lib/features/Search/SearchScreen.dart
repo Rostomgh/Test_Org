@@ -18,7 +18,7 @@ class _SearchScreenState extends State<SearchScreen> {
         appBar: AppBar(
           elevation: 3,
           title: const Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 0.0),
             child: Text(
               'Search',
               style: TextStyle(

@@ -26,7 +26,7 @@ class CustomCScreen extends StatelessWidget {
             color: Colors.black.withOpacity(0.2), // Shadow color
             spreadRadius: 1, // Spread radius
             blurRadius: 2, // Blur radius
-            offset: Offset(0, 4), // Shadow position
+            offset: Offset(0, 0), // Shadow position
           ),
         ],
       ),
